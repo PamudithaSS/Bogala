@@ -1,0 +1,36 @@
+{
+  "id": "473f945b-fdb3-49f6-908b-58e0ed59a10f",
+  "name": "Bogala Customization",
+  "publisher": "Softserve (Pvt) Ltd.",
+  "version": "1.0.0.31",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "publisher": "Microsoft",
+      "name": "System Application",
+      "version": "20.4.44313.44629"
+    },
+    {
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "publisher": "Microsoft",
+      "name": "Base Application",
+      "version": "20.4.44313.44629"
+    }
+  ],
+  "screenshots": [],
+  "platform": "15.0.36510.0",
+ 
+  "idRanges": [],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false
+  },
+  "runtime": "8.0"
+}  

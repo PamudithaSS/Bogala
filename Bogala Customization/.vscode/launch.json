@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // "schemaUpdateMode": "Synchronize"
+            //"name": "Microsoft cloud sandbox",
+            "name": "Your own server",
+            "request": "launch",
+            "type": "al",
+            //"environmentType": "OnPrem",
+            "environmentType": "Sandbox",
+            "environmentName":"Developer_Sandbox2", 
+            // "server": "http://localhost/",
+            // "serverInstance": "BC150",
+            // "authentication": "Windows",
+            //"startupObjectId": 337,
+            // "port": 7069,
+            //"tenant": "default",
+            //"startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "server": "https://businesscentral.dynamics.com/2a7d45fe-4943-4895-b699-df463ea4cff0/Developer_Sandbox2",
+           // "server": "https://businesscentral.dynamics.com/1b0725e0-f8f7-4b12-ba64-cbe64be12530/Sandbox_Developer",
+            "tenant": "2a7d45fe-4943-4895-b699-df463ea4cff0",
+            "serverInstance": "Developer_Sandbox2",
+            "dependencyPublishingOption": "Ignore",
+            "schemaUpdateMode": "Synchronize"
+        }
+    ]
+}
