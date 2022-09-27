@@ -1,7 +1,6 @@
 table 50005 "Customized Data Upgrade"
 {
     DataClassification = ToBeClassified;
-    //Test Comment
 
     fields
     {
@@ -644,6 +643,8 @@ table 50005 "Customized Data Upgrade"
         {
             DataClassification = ToBeClassified;
         }
+
+
     }
 
     keys

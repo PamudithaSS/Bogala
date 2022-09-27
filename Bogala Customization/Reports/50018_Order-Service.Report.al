@@ -1166,29 +1166,29 @@ report 50018 "Order - Service"
                         ApplicationArea = All;
                         Caption = 'Show Internal Information';
                     }
-                    field(ArchiveDocument; ArchiveDocument)
-                    {
-                        ApplicationArea = All;
-                        Caption = 'Archive Document';
+                    // field(ArchiveDocument; ArchiveDocument)
+                    // {
+                    //     ApplicationArea = All;
+                    //     Caption = 'Archive Document';
 
-                        trigger OnValidate();
-                        begin
-                            IF NOT ArchiveDocument THEN
-                                LogInteraction := FALSE;
-                        end;
-                    }
-                    field(LogInteraction; LogInteraction)
-                    {
-                        ApplicationArea = All;
-                        Caption = 'Log Interaction';
-                        Enabled = LogInteractionEnable;
+                    //     trigger OnValidate();
+                    //     begin
+                    //         IF NOT ArchiveDocument THEN
+                    //             LogInteraction := FALSE;
+                    //     end;
+                    // }
+                    // field(LogInteraction; LogInteraction)
+                    // {
+                    //     ApplicationArea = All;
+                    //     Caption = 'Log Interaction';
+                    //     Enabled = LogInteractionEnable;
 
-                        trigger OnValidate();
-                        begin
-                            IF LogInteraction THEN
-                                ArchiveDocument := ArchiveDocumentEnable;
-                        end;
-                    }
+                    //     trigger OnValidate();
+                    //     begin
+                    //         IF LogInteraction THEN
+                    //             ArchiveDocument := ArchiveDocumentEnable;
+                    //     end;
+                    // }
                 }
             }
         }
@@ -1204,10 +1204,24 @@ report 50018 "Order - Service"
 
         trigger OnOpenPage();
         begin
-            //ArchiveDocument := PurchSetup."Archive Quotes and Orders";    //MR
-            LogInteraction := SegManagement.FindInteractTmplCode(13) <> '';
 
-            LogInteractionEnable := LogInteraction;
+            // // ArchiveDocument := PurchSetup."Archive Orders"; //MR
+            // if PurchSetup."Archive Orders" then
+            //     ArchiveDocument := true
+            // else
+            //     if PurchSetup."Archive Quotes" = PurchSetup."Archive Quotes"::Always then begin
+            //         ArchiveDocument := true
+            //     end
+            //     else
+            //         ArchiveDocument := false;
+
+
+            // if PurchSetup."Archive Orders" = true then begin
+            //     ArchiveDocument := true;
+            // end;
+            // LogInteraction := SegManagement.FindInteractTmplCode(13) <> '';
+
+            // LogInteractionEnable := LogInteraction;
         end;
     }
 

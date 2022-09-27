@@ -33,6 +33,23 @@ pageextension 50017 PurchaseQuote extends "Purchase Quote"
                 ApplicationArea = All;
             }
         }
+        addbefore("Payment Discount %")
+        {
+            field("Tax Group"; Rec."Tax Group")
+            {
+                ApplicationArea = All;
+            }
+            field("Tax Liable 1"; Rec."Tax Liable")
+            {
+                ApplicationArea = All;
+                Caption = 'Tax Liable';
+            }
+            field("Tax Area Code 2"; Rec."Tax Area Code")
+            {
+                ApplicationArea = All;
+                Caption = 'Tax Area Code';
+            }
+        }
         // addafter("VAT Bus. Posting Group")
         // {
         //     field("Tax Area Code"; Rec."Tax Area Code")

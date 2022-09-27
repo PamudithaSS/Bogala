@@ -13,6 +13,9 @@ report 50022 "Sales - Invoice - Bogala"
             DataItemTableView = SORTING("No.");
             RequestFilterFields = "No.", "Sell-to Customer No.", "No. Printed";
             //ReqFilterHeading = 'Posted Sales Invoice';
+
+            column(Sell_to_Customer_Name; "Sell-to Customer Name")
+            { }
             column(CompanyInfoPicture; CompanyInfo.Picture)
             { }
             column(No_SalesInvHdr; "No.")
@@ -227,6 +230,14 @@ report 50022 "Sales - Invoice - Bogala"
                     column(CompanyInfoPostCode; CompanyInfo."Post Code")
                     {
                     }
+                    column(CompanyInfoName; CompanyInfo.Name)
+                    { }
+                    column(Address; CompanyInfo.Address)
+                    { }
+                    column(CompanyInfoAddress2; CompanyInfo."Address 2")
+                    { }
+                    column(CompanyInfoPost; CompanyInfo.City)
+                    { }
                     column(CustAddr6; CustAddr[6])
                     {
                     }

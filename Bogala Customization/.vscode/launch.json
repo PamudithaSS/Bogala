@@ -26,7 +26,7 @@
             "tenant": "2a7d45fe-4943-4895-b699-df463ea4cff0",
             "serverInstance": "Developer_Sandbox2",
             "dependencyPublishingOption": "Ignore",
-            "schemaUpdateMode": "Synchronize"
+            "schemaUpdateMode": "ForceSync"
         }
     ]
 }

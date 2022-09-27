@@ -793,95 +793,19 @@
                     <VerticalAlign>Top</VerticalAlign>
                   </Style>
                 </Textbox>
-                <Textbox Name="Textbox17">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>="1st Signatories"</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>9pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox15</rd:DefaultName>
-                  <Top>6.32973cm</Top>
-                  <Left>15.62115cm</Left>
-                  <Height>0.66644cm</Height>
-                  <Width>3.82733cm</Width>
-                  <ZIndex>17</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <TopBorder>
-                      <Style>Dotted</Style>
-                    </TopBorder>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
                 <Rectangle Name="Rectangle3">
                   <KeepTogether>true</KeepTogether>
                   <Top>0.56411cm</Top>
                   <Left>4.79818cm</Left>
                   <Height>1.02863cm</Height>
                   <Width>5.93321cm</Width>
-                  <ZIndex>18</ZIndex>
+                  <ZIndex>17</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
                     </Border>
                   </Style>
                 </Rectangle>
-                <Textbox Name="Textbox18">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>="2nd Signatories"</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>9pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox15</rd:DefaultName>
-                  <Top>6.32973cm</Top>
-                  <Left>20.02159cm</Left>
-                  <Height>0.66644cm</Height>
-                  <Width>3.91993cm</Width>
-                  <ZIndex>19</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <TopBorder>
-                      <Style>Dotted</Style>
-                    </TopBorder>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <DataElementOutput>ContentsOnly</DataElementOutput>

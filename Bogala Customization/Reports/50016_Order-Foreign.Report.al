@@ -1128,29 +1128,29 @@ report 50016 "Order - Foreign"
                         ApplicationArea = All;
                         Caption = 'Show Internal Information';
                     }
-                    field(ArchiveDocument; ArchiveDocument)
-                    {
-                        ApplicationArea = All;
-                        Caption = 'Archive Document';
+                    // field(ArchiveDocument; ArchiveDocument)
+                    // {
+                    //     ApplicationArea = All;
+                    //     Caption = 'Archive Document';
 
-                        trigger OnValidate();
-                        begin
-                            IF NOT ArchiveDocument THEN
-                                LogInteraction := FALSE;
-                        end;
-                    }
-                    field(LogInteraction; LogInteraction)
-                    {
-                        ApplicationArea = All;
-                        Caption = 'Log Interaction';
-                        Enabled = LogInteractionEnable;
+                    //     trigger OnValidate();
+                    //     begin
+                    //         IF NOT ArchiveDocument THEN
+                    //             LogInteraction := FALSE;
+                    //     end;
+                    // }
+                    // field(LogInteraction; LogInteraction)
+                    // {
+                    //     ApplicationArea = All;
+                    //     Caption = 'Log Interaction';
+                    //     Enabled = LogInteractionEnable;
 
-                        trigger OnValidate();
-                        begin
-                            IF LogInteraction THEN
-                                ArchiveDocument := ArchiveDocumentEnable;
-                        end;
-                    }
+                    //     trigger OnValidate();
+                    //     begin
+                    //         IF LogInteraction THEN
+                    //             ArchiveDocument := ArchiveDocumentEnable;
+                    //     end;
+                    // }
                 }
             }
         }
@@ -1167,9 +1167,9 @@ report 50016 "Order - Foreign"
         trigger OnOpenPage();
         begin
             //ArchiveDocument := PurchSetup."Archive Quotes and Orders";    //MR
-            LogInteraction := SegManagement.FindInteractTmplCode(13) <> '';
+            // LogInteraction := SegManagement.FindInteractTmplCode(13) <> '';
 
-            LogInteractionEnable := LogInteraction;
+            // LogInteractionEnable := LogInteraction;
         end;
     }
 

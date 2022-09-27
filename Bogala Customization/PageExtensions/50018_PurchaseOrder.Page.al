@@ -23,7 +23,15 @@ pageextension 50018 PurchaseOrder extends "Purchase Order"
             {
                 ApplicationArea = All;
             }
+            field("Posting No."; Rec."Posting No.")
+            {
+                ApplicationArea = All;
+            }
             field("Receiving No. Series"; Rec."Receiving No. Series")
+            {
+                ApplicationArea = All;
+            }
+            field("Receiving No."; Rec."Receiving No.")
             {
                 ApplicationArea = All;
             }
@@ -38,6 +46,7 @@ pageextension 50018 PurchaseOrder extends "Purchase Order"
             field("Created User"; Rec."Created User")
             {
                 ApplicationArea = All;
+                Editable = false;
             }
             field("No. Series"; Rec."No. Series")
             {
@@ -83,6 +92,7 @@ pageextension 50018 PurchaseOrder extends "Purchase Order"
             field("Approver User ID"; Rec."Approve User ID")
             {
                 ApplicationArea = All;
+                Caption = 'Approver User ID';
                 Editable = edit;
             }
         }
@@ -186,12 +196,12 @@ pageextension 50018 PurchaseOrder extends "Purchase Order"
                 var
                     PurchHeader: Record "Purchase Header";
                 begin
-                    IF Rec."No. Series" IN ['PO F NEW'] THEN begin
-                        Clear(PurchHeader);
-                        PurchHeader.SetRange("Document Type", Rec."Document Type");
-                        PurchHeader.SetRange("No.", Rec."No.");
-                        REPORT.RUNMODAL(50016, TRUE, FALSE, PurchHeader)
-                    end;
+                    // IF Rec."No. Series" IN ['PO F NEW'] THEN begin
+                    Clear(PurchHeader);
+                    PurchHeader.SetRange("Document Type", Rec."Document Type");
+                    PurchHeader.SetRange("No.", Rec."No.");
+                    REPORT.RUNMODAL(50016, TRUE, FALSE, PurchHeader)
+                    // end;
                 end;
             }
             action(PrintLocalPO)
@@ -208,12 +218,12 @@ pageextension 50018 PurchaseOrder extends "Purchase Order"
                 var
                     PurchHeader: Record "Purchase Header";
                 begin
-                    IF Rec."No. Series" IN ['PO L HO', 'PO MINE', ''] THEN begin
-                        Clear(PurchHeader);
-                        PurchHeader.SetRange("Document Type", Rec."Document Type");
-                        PurchHeader.SetRange("No.", Rec."No.");
-                        REPORT.RUNMODAL(50017, TRUE, FALSE, PurchHeader);
-                    end;
+                    // IF Rec."No. Series" IN ['PO L HO', 'PO MINE', ''] THEN begin
+                    Clear(PurchHeader);
+                    PurchHeader.SetRange("Document Type", Rec."Document Type");
+                    PurchHeader.SetRange("No.", Rec."No.");
+                    REPORT.RUNMODAL(50017, TRUE, FALSE, PurchHeader);
+                    // end;
                 end;
             }
             action(PrintServicePO)
@@ -230,12 +240,12 @@ pageextension 50018 PurchaseOrder extends "Purchase Order"
                 var
                     PurchHeader: Record "Purchase Header";
                 begin
-                    IF Rec."No. Series" IN ['PO SER FOR', 'PO SER M', 'PO SERVICE', 'MSOOH'] THEN begin
-                        Clear(PurchHeader);
-                        PurchHeader.SetRange("Document Type", Rec."Document Type");
-                        PurchHeader.SetRange("No.", Rec."No.");
-                        REPORT.RUNMODAL(50018, TRUE, FALSE, PurchHeader);
-                    end;
+                    // IF Rec."No. Series" IN ['PO SER FOR', 'PO SER M', 'PO SERVICE', 'MSOOH'] THEN begin
+                    Clear(PurchHeader);
+                    PurchHeader.SetRange("Document Type", Rec."Document Type");
+                    PurchHeader.SetRange("No.", Rec."No.");
+                    REPORT.RUNMODAL(50018, TRUE, FALSE, PurchHeader);
+                    // end;
                 end;
             }
         }
@@ -248,6 +258,15 @@ pageextension 50018 PurchaseOrder extends "Purchase Order"
                 if Rec."Approve User ID" = '' then begin
                     Error('Approver User ID must have a value');
                 end;
+            end;
+        }
+        modify(Release)
+        {
+            trigger OnAfterAction()
+
+            begin
+                if Rec."Approve User ID" = '' then
+                    Error('Approver User ID Must have a Value');
             end;
         }
     }
