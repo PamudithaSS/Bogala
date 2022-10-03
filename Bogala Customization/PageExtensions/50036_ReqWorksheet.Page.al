@@ -7,6 +7,7 @@ pageextension 50036 ReqWorksheet extends "Req. Worksheet"
             field("No. Series"; Rec."No. Series")
             {
                 ApplicationArea = All;
+                Editable = true;
             }
         }
     }

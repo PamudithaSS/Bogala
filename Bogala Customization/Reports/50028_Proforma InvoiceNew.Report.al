@@ -109,6 +109,12 @@ report 50028 "Proforma InvoiceNew"
             column(InvoiceHeader; InvoiceHeader)
             {
             }
+            column(VatAmt; VatAmt)
+            { }
+            column(Amount; Amount)
+            { }
+            column(Amount_Including_VAT; "Amount Including VAT")
+            { }
             dataitem("Sales Line"; "Sales Line")
             {
                 DataItemLink = "Document Type" = FIELD("Document Type"), "Document No." = FIELD("No.");
@@ -212,6 +218,9 @@ report 50028 "Proforma InvoiceNew"
                 //PS (+)
                 if "Currency Code" = '' then
                     "Currency Code" := 'LKR';
+                CalcFields("Amount Including VAT");
+                CalcFields(Amount);
+                VatAmt := "Amount Including VAT" - Amount;
                 //PS(-)
 
                 RVCustomer.RESET;
@@ -337,6 +346,7 @@ report 50028 "Proforma InvoiceNew"
         TotSVat: Decimal;
         TotVat: Decimal;
         TypeCheck: Boolean;
+        VatAmt: Decimal;
         CommentLine_: Record "Sales Comment Line";
         CustomInvoiceCheck: Boolean;
         InvoiceHeader: Text[100];

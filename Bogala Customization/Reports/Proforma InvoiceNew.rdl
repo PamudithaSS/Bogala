@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
@@ -11,6 +11,187 @@
       <rd:DataSourceID>2437db18-92af-4c31-a0a8-83335945e15e</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="D1_CompanyInfoName">
+          <DataField>D1_CompanyInfoName</DataField>
+        </Field>
+        <Field Name="D1_CompanyInfoAddress">
+          <DataField>D1_CompanyInfoAddress</DataField>
+        </Field>
+        <Field Name="D1_CompanyInfoAddress2">
+          <DataField>D1_CompanyInfoAddress2</DataField>
+        </Field>
+        <Field Name="D1_CompanyInfoCity">
+          <DataField>D1_CompanyInfoCity</DataField>
+        </Field>
+        <Field Name="D1_CountrysName">
+          <DataField>D1_CountrysName</DataField>
+        </Field>
+        <Field Name="D1_CompanyInfoPhoneNo">
+          <DataField>D1_CompanyInfoPhoneNo</DataField>
+        </Field>
+        <Field Name="D1_CompanyInfoFaxNo">
+          <DataField>D1_CompanyInfoFaxNo</DataField>
+        </Field>
+        <Field Name="D1_CompanyInfoPicture">
+          <DataField>D1_CompanyInfoPicture</DataField>
+        </Field>
+        <Field Name="D1_UserSetupEMail">
+          <DataField>D1_UserSetupEMail</DataField>
+        </Field>
+        <Field Name="D1_RVCustomerName">
+          <DataField>D1_RVCustomerName</DataField>
+        </Field>
+        <Field Name="D1_RVCustomerAddress">
+          <DataField>D1_RVCustomerAddress</DataField>
+        </Field>
+        <Field Name="D1_RVCustomerAddress2">
+          <DataField>D1_RVCustomerAddress2</DataField>
+        </Field>
+        <Field Name="D1_CusCityAndPostCode">
+          <DataField>D1_CusCityAndPostCode</DataField>
+        </Field>
+        <Field Name="D1_Country">
+          <DataField>D1_Country</DataField>
+        </Field>
+        <Field Name="D1_RVCustomerPhoneNo">
+          <DataField>D1_RVCustomerPhoneNo</DataField>
+        </Field>
+        <Field Name="D1_No">
+          <DataField>D1_No</DataField>
+        </Field>
+        <Field Name="D1_DocumentDate">
+          <DataField>D1_DocumentDate</DataField>
+        </Field>
+        <Field Name="D1_PromisedDeliveryDate">
+          <DataField>D1_PromisedDeliveryDate</DataField>
+        </Field>
+        <Field Name="D1_CurrencyCode">
+          <DataField>D1_CurrencyCode</DataField>
+        </Field>
+        <Field Name="D1_LineComments">
+          <DataField>D1_LineComments</DataField>
+        </Field>
+        <Field Name="D1_Destination">
+          <DataField>D1_Destination</DataField>
+        </Field>
+        <Field Name="D1_DeliveryDetails">
+          <DataField>D1_DeliveryDetails</DataField>
+        </Field>
+        <Field Name="D1_BankAccountNo">
+          <DataField>D1_BankAccountNo</DataField>
+        </Field>
+        <Field Name="D1_BankName">
+          <DataField>D1_BankName</DataField>
+        </Field>
+        <Field Name="D1_BankAddress">
+          <DataField>D1_BankAddress</DataField>
+        </Field>
+        <Field Name="D1_BankAddress2">
+          <DataField>D1_BankAddress2</DataField>
+        </Field>
+        <Field Name="D1_BankCity">
+          <DataField>D1_BankCity</DataField>
+        </Field>
+        <Field Name="D1_BankCountryName">
+          <DataField>D1_BankCountryName</DataField>
+        </Field>
+        <Field Name="D1_BankSWIFTCode">
+          <DataField>D1_BankSWIFTCode</DataField>
+        </Field>
+        <Field Name="D1_PaymentTermsDescription">
+          <DataField>D1_PaymentTermsDescription</DataField>
+        </Field>
+        <Field Name="D1_ShipmentMethodCode">
+          <DataField>D1_ShipmentMethodCode</DataField>
+        </Field>
+        <Field Name="D1_TypeCheck">
+          <DataField>D1_TypeCheck</DataField>
+        </Field>
+        <Field Name="Comment">
+          <DataField>Comment</DataField>
+        </Field>
+        <Field Name="InvoiceHeader">
+          <DataField>InvoiceHeader</DataField>
+        </Field>
+        <Field Name="VatAmt">
+          <DataField>VatAmt</DataField>
+        </Field>
+        <Field Name="VatAmtFormat">
+          <DataField>VatAmtFormat</DataField>
+        </Field>
+        <Field Name="D2_I">
+          <DataField>D2_I</DataField>
+        </Field>
+        <Field Name="D2_Descrip">
+          <DataField>D2_Descrip</DataField>
+        </Field>
+        <Field Name="D2_ShippingMarks">
+          <DataField>D2_ShippingMarks</DataField>
+        </Field>
+        <Field Name="D2_NoofPackages">
+          <DataField>D2_NoofPackages</DataField>
+        </Field>
+        <Field Name="D2_Quantity">
+          <DataField>D2_Quantity</DataField>
+        </Field>
+        <Field Name="D2_QuantityFormat">
+          <DataField>D2_QuantityFormat</DataField>
+        </Field>
+        <Field Name="D2_UOM">
+          <DataField>D2_UOM</DataField>
+        </Field>
+        <Field Name="D2_UnitPrice">
+          <DataField>D2_UnitPrice</DataField>
+        </Field>
+        <Field Name="D2_UnitPriceFormat">
+          <DataField>D2_UnitPriceFormat</DataField>
+        </Field>
+        <Field Name="D2_LineAmount">
+          <DataField>D2_LineAmount</DataField>
+        </Field>
+        <Field Name="D2_LineAmountFormat">
+          <DataField>D2_LineAmountFormat</DataField>
+        </Field>
+        <Field Name="D2_DimensionValueName">
+          <DataField>D2_DimensionValueName</DataField>
+        </Field>
+        <Field Name="D2_DVTotal">
+          <DataField>D2_DVTotal</DataField>
+        </Field>
+        <Field Name="D2_DVTotalFormat">
+          <DataField>D2_DVTotalFormat</DataField>
+        </Field>
+        <Field Name="D2_TotNbt">
+          <DataField>D2_TotNbt</DataField>
+        </Field>
+        <Field Name="D2_TotNbtFormat">
+          <DataField>D2_TotNbtFormat</DataField>
+        </Field>
+        <Field Name="D2_TotSVat">
+          <DataField>D2_TotSVat</DataField>
+        </Field>
+        <Field Name="D2_TotSVatFormat">
+          <DataField>D2_TotSVatFormat</DataField>
+        </Field>
+        <Field Name="D2_TotVat">
+          <DataField>D2_TotVat</DataField>
+        </Field>
+        <Field Name="D2_TotVatFormat">
+          <DataField>D2_TotVatFormat</DataField>
+        </Field>
+        <Field Name="D2_TaxTxt1">
+          <DataField>D2_TaxTxt1</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -2248,7 +2429,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox6</rd:DefaultName>
-              <Top>0.82985in</Top>
+              <Top>0.89929in</Top>
               <Left>6.58805in</Left>
               <Height>0.16667in</Height>
               <Width>1.02555in</Width>
@@ -2286,7 +2467,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox6</rd:DefaultName>
-              <Top>1.06596in</Top>
+              <Top>1.07985in</Top>
               <Left>6.58805in</Left>
               <Height>0.16667in</Height>
               <Width>1.02555in</Width>
@@ -2324,7 +2505,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox6</rd:DefaultName>
-              <Top>1.24303in</Top>
+              <Top>1.29685in</Top>
               <Left>6.58805in</Left>
               <Height>0.16667in</Height>
               <Width>1.02555in</Width>
@@ -2349,7 +2530,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Last(Fields!D2_TotVat.Value, "DataSet_Result")</Value>
+                      <Value>=Fields!VatAmt.Value</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Format>#,0.00;(#,0.00)</Format>
@@ -2387,7 +2568,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Last(Fields!D2_DVTotal.Value, "DataSet_Result")+Last(Fields!D2_TotNbt.Value, "DataSet_Result")+Last(Fields!D2_TotVat.Value, "DataSet_Result")</Value>
+                      <Value EvaluationMode="Constant" />
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Format>#,0.00;(#,0.00)</Format>
@@ -2740,6 +2921,12 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -2779,179 +2966,4 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="D1_CompanyInfoName">
-          <DataField>D1_CompanyInfoName</DataField>
-        </Field>
-        <Field Name="D1_CompanyInfoAddress">
-          <DataField>D1_CompanyInfoAddress</DataField>
-        </Field>
-        <Field Name="D1_CompanyInfoAddress2">
-          <DataField>D1_CompanyInfoAddress2</DataField>
-        </Field>
-        <Field Name="D1_CompanyInfoCity">
-          <DataField>D1_CompanyInfoCity</DataField>
-        </Field>
-        <Field Name="D1_CountrysName">
-          <DataField>D1_CountrysName</DataField>
-        </Field>
-        <Field Name="D1_CompanyInfoPhoneNo">
-          <DataField>D1_CompanyInfoPhoneNo</DataField>
-        </Field>
-        <Field Name="D1_CompanyInfoFaxNo">
-          <DataField>D1_CompanyInfoFaxNo</DataField>
-        </Field>
-        <Field Name="D1_CompanyInfoPicture">
-          <DataField>D1_CompanyInfoPicture</DataField>
-        </Field>
-        <Field Name="D1_UserSetupEMail">
-          <DataField>D1_UserSetupEMail</DataField>
-        </Field>
-        <Field Name="D1_RVCustomerName">
-          <DataField>D1_RVCustomerName</DataField>
-        </Field>
-        <Field Name="D1_RVCustomerAddress">
-          <DataField>D1_RVCustomerAddress</DataField>
-        </Field>
-        <Field Name="D1_RVCustomerAddress2">
-          <DataField>D1_RVCustomerAddress2</DataField>
-        </Field>
-        <Field Name="D1_CusCityAndPostCode">
-          <DataField>D1_CusCityAndPostCode</DataField>
-        </Field>
-        <Field Name="D1_Country">
-          <DataField>D1_Country</DataField>
-        </Field>
-        <Field Name="D1_RVCustomerPhoneNo">
-          <DataField>D1_RVCustomerPhoneNo</DataField>
-        </Field>
-        <Field Name="D1_No">
-          <DataField>D1_No</DataField>
-        </Field>
-        <Field Name="D1_DocumentDate">
-          <DataField>D1_DocumentDate</DataField>
-        </Field>
-        <Field Name="D1_PromisedDeliveryDate">
-          <DataField>D1_PromisedDeliveryDate</DataField>
-        </Field>
-        <Field Name="D1_CurrencyCode">
-          <DataField>D1_CurrencyCode</DataField>
-        </Field>
-        <Field Name="D1_LineComments">
-          <DataField>D1_LineComments</DataField>
-        </Field>
-        <Field Name="D1_Destination">
-          <DataField>D1_Destination</DataField>
-        </Field>
-        <Field Name="D1_DeliveryDetails">
-          <DataField>D1_DeliveryDetails</DataField>
-        </Field>
-        <Field Name="D1_BankAccountNo">
-          <DataField>D1_BankAccountNo</DataField>
-        </Field>
-        <Field Name="D1_BankName">
-          <DataField>D1_BankName</DataField>
-        </Field>
-        <Field Name="D1_BankAddress">
-          <DataField>D1_BankAddress</DataField>
-        </Field>
-        <Field Name="D1_BankAddress2">
-          <DataField>D1_BankAddress2</DataField>
-        </Field>
-        <Field Name="D1_BankCity">
-          <DataField>D1_BankCity</DataField>
-        </Field>
-        <Field Name="D1_BankCountryName">
-          <DataField>D1_BankCountryName</DataField>
-        </Field>
-        <Field Name="D1_BankSWIFTCode">
-          <DataField>D1_BankSWIFTCode</DataField>
-        </Field>
-        <Field Name="D1_PaymentTermsDescription">
-          <DataField>D1_PaymentTermsDescription</DataField>
-        </Field>
-        <Field Name="D1_ShipmentMethodCode">
-          <DataField>D1_ShipmentMethodCode</DataField>
-        </Field>
-        <Field Name="D1_TypeCheck">
-          <DataField>D1_TypeCheck</DataField>
-        </Field>
-        <Field Name="Comment">
-          <DataField>Comment</DataField>
-        </Field>
-        <Field Name="InvoiceHeader">
-          <DataField>InvoiceHeader</DataField>
-        </Field>
-        <Field Name="D2_I">
-          <DataField>D2_I</DataField>
-        </Field>
-        <Field Name="D2_Descrip">
-          <DataField>D2_Descrip</DataField>
-        </Field>
-        <Field Name="D2_ShippingMarks">
-          <DataField>D2_ShippingMarks</DataField>
-        </Field>
-        <Field Name="D2_NoofPackages">
-          <DataField>D2_NoofPackages</DataField>
-        </Field>
-        <Field Name="D2_Quantity">
-          <DataField>D2_Quantity</DataField>
-        </Field>
-        <Field Name="D2_QuantityFormat">
-          <DataField>D2_QuantityFormat</DataField>
-        </Field>
-        <Field Name="D2_UOM">
-          <DataField>D2_UOM</DataField>
-        </Field>
-        <Field Name="D2_UnitPrice">
-          <DataField>D2_UnitPrice</DataField>
-        </Field>
-        <Field Name="D2_UnitPriceFormat">
-          <DataField>D2_UnitPriceFormat</DataField>
-        </Field>
-        <Field Name="D2_LineAmount">
-          <DataField>D2_LineAmount</DataField>
-        </Field>
-        <Field Name="D2_LineAmountFormat">
-          <DataField>D2_LineAmountFormat</DataField>
-        </Field>
-        <Field Name="D2_DimensionValueName">
-          <DataField>D2_DimensionValueName</DataField>
-        </Field>
-        <Field Name="D2_DVTotal">
-          <DataField>D2_DVTotal</DataField>
-        </Field>
-        <Field Name="D2_DVTotalFormat">
-          <DataField>D2_DVTotalFormat</DataField>
-        </Field>
-        <Field Name="D2_TotNbt">
-          <DataField>D2_TotNbt</DataField>
-        </Field>
-        <Field Name="D2_TotNbtFormat">
-          <DataField>D2_TotNbtFormat</DataField>
-        </Field>
-        <Field Name="D2_TotSVat">
-          <DataField>D2_TotSVat</DataField>
-        </Field>
-        <Field Name="D2_TotSVatFormat">
-          <DataField>D2_TotSVatFormat</DataField>
-        </Field>
-        <Field Name="D2_TotVat">
-          <DataField>D2_TotVat</DataField>
-        </Field>
-        <Field Name="D2_TotVatFormat">
-          <DataField>D2_TotVatFormat</DataField>
-        </Field>
-        <Field Name="D2_TaxTxt1">
-          <DataField>D2_TaxTxt1</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
