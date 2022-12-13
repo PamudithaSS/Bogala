@@ -1,7 +1,7 @@
 report 50054 "Print Cheque"
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './Reports/Check - GK Mines - Copy.rdl';
+    RDLCLayout = './Reports/Check - GK Mines - Copy06_12_2022.rdl';
     Caption = 'Print Cheque';
     Permissions = TableData 270 = m;
 

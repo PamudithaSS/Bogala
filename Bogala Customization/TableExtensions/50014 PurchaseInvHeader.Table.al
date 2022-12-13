@@ -31,5 +31,11 @@ tableextension 50014 PurchaseInvHeader extends "Purch. Inv. Header"
         {
             DataClassification = ToBeClassified;
         }
+        field(50030; "Quote Type"; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = Local,Foreign,Service;
+            OptionCaption = 'Local,Foreign,Service';
+        }
     }
 }

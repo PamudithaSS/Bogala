@@ -1,7 +1,8 @@
-tableextension 50028 PurchCrMemoHdr extends "Purch. Cr. Memo Hdr."
+tableextension 50031 PostPurchRtnShpmnt extends "Return Shipment Header"
 {
     fields
     {
+        // Add changes to table fields here
         field(50000; "Delivery Details"; Text[100])
         {
             DataClassification = ToBeClassified;
@@ -38,4 +39,7 @@ tableextension 50028 PurchCrMemoHdr extends "Purch. Cr. Memo Hdr."
             OptionCaption = 'Local,Foreign,Service';
         }
     }
+
+    var
+        myInt: Integer;
 }

@@ -18,5 +18,9 @@ tableextension 50008 CompanyInfo extends "Company Information"
         {
             DataClassification = ToBeClassified;
         }
+        field(50005; "SVAT %"; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 }

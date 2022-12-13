@@ -54,6 +54,12 @@ tableextension 50007 PurchaseHeader extends "Purchase Header"
             ValidateTableRelation = false;
             TableRelation = User."User Name" where("User Name" = filter('SALIYA|ANURA|CHAMINDA|MUHANDIRAM|HEMANTHA|DEVIKA'));
         }
+        field(50030; "Quote Type"; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = Local,Foreign,Service;
+            OptionCaption = 'Local,Foreign,Service';
+        }
         modify("Buy-from Vendor No.")
         {
             trigger OnAfterValidate()

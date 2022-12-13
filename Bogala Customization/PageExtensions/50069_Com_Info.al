@@ -8,6 +8,10 @@ pageextension 50069 ComInfoExt extends "Company Information"
             {
                 ApplicationArea = All;
             }
+            field("SVAT %"; Rec."SVAT %")
+            {
+                ApplicationArea = All;
+            }
         }
     }
 

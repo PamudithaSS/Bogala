@@ -9,7 +9,7 @@
             "type": "al",
             //"environmentType": "OnPrem",
             "environmentType": "Sandbox",
-            "environmentName":"Developer_Sandbox2", 
+            "environmentName":"Prod_Copy", 
             // "server": "http://localhost/",
             // "serverInstance": "BC150",
             // "authentication": "Windows",
@@ -21,12 +21,12 @@
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
-            "server": "https://businesscentral.dynamics.com/2a7d45fe-4943-4895-b699-df463ea4cff0/Developer_Sandbox2",
+            "server": "https://businesscentral.dynamics.com/2a7d45fe-4943-4895-b699-df463ea4cff0/Prod_Copy",
            // "server": "https://businesscentral.dynamics.com/1b0725e0-f8f7-4b12-ba64-cbe64be12530/Sandbox_Developer",
             "tenant": "2a7d45fe-4943-4895-b699-df463ea4cff0",
-            "serverInstance": "Developer_Sandbox2",
+            "serverInstance": "Prod_Copy",
             "dependencyPublishingOption": "Ignore",
-            "schemaUpdateMode": "ForceSync"
+            "schemaUpdateMode": "Synchronize"
         }
     ]
 }

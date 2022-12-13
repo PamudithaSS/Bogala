@@ -115,6 +115,8 @@ report 50028 "Proforma InvoiceNew"
             { }
             column(Amount_Including_VAT; "Amount Including VAT")
             { }
+            column(svatAmount; svatAmount)
+            { }
             dataitem("Sales Line"; "Sales Line")
             {
                 DataItemLink = "Document Type" = FIELD("Document Type"), "Document No." = FIELD("No.");
@@ -184,6 +186,7 @@ report 50028 "Proforma InvoiceNew"
                     IF RVItem.FIND('-') THEN;
 
 
+
                     // IF NOT (Type = Type::Item) THEN              //MR
                     //     CurrReport.SHOWOUTPUT := FALSE;
 
@@ -215,6 +218,7 @@ report 50028 "Proforma InvoiceNew"
 
             trigger OnAfterGetRecord();
             begin
+                CompanyInfo1.Get;
                 //PS (+)
                 if "Currency Code" = '' then
                     "Currency Code" := 'LKR';
@@ -222,6 +226,11 @@ report 50028 "Proforma InvoiceNew"
                 CalcFields(Amount);
                 VatAmt := "Amount Including VAT" - Amount;
                 //PS(-)
+
+                //SVAT Calculation
+                if ("Tax Area Code" = 'SVAT') or ("Tax Area Code" = 'SVAT15') then begin
+                    svatAmount := ("Amount Including VAT" * CompanyInfo1."SVAT %") / 100;
+                end;
 
                 RVCustomer.RESET;
                 IF RVCustomer.GET("Sell-to Customer No.") THEN;
@@ -320,6 +329,7 @@ report 50028 "Proforma InvoiceNew"
 
     var
         CompanyInfo: Record "Company Information";
+        CompanyInfo1: Record "Company Information";
         RVCustomer: Record Customer;
         DVTotal: Decimal;
         UserSetup: Record "User Setup";
@@ -352,6 +362,7 @@ report 50028 "Proforma InvoiceNew"
         InvoiceHeader: Text[100];
         GSMBInvoiceCheck: Boolean;
         MethodCode: Code[10];
+        svatAmount: Decimal;
         TEMPTaxDetail: Record "Tax Detail" temporary;
         SalesTaxCalculate: Codeunit "Customization Management"; //"Sales Tax Calculate"; ---Ginasena---
 

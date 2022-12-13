@@ -26,6 +26,7 @@ pageextension 50018 PurchaseOrder extends "Purchase Order"
             field("Posting No."; Rec."Posting No.")
             {
                 ApplicationArea = All;
+                Editable = false;
             }
             field("Receiving No. Series"; Rec."Receiving No. Series")
             {
@@ -34,6 +35,7 @@ pageextension 50018 PurchaseOrder extends "Purchase Order"
             field("Receiving No."; Rec."Receiving No.")
             {
                 ApplicationArea = All;
+                Editable = false;
             }
             field("Description 2"; Rec."Description 2")
             {

@@ -2311,7 +2311,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Fields!svatAmount.Value</Value>
+                      <Value>=Last(Fields!D2_TotSVat.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Format>#,0.00;(#,0.00)</Format>
@@ -2387,7 +2387,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Last(Fields!D2_DVTotal.Value, "DataSet_Result")+Last(Fields!D2_TotNbt.Value, "DataSet_Result") + Last(Fields!VatAmt.Value, "DataSet_Result")</Value>
+                      <Value EvaluationMode="Constant" />
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Format>#,0.00;(#,0.00)</Format>
@@ -2669,6 +2669,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0in</Top>
               <Left>0.17583in</Left>
               <Height>0.19917in</Height>
               <Width>5.65888in</Width>

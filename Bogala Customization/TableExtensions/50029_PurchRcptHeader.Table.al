@@ -31,5 +31,11 @@ tableextension 50029 _PurchRcptHeader extends "Purch. Rcpt. Header"
         {
             DataClassification = ToBeClassified;
         }
+        field(50030; "Quote Type"; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = Local,Foreign,Service;
+            OptionCaption = 'Local,Foreign,Service';
+        }
     }
 }
