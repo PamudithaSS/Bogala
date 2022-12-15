@@ -104,6 +104,7 @@ report 50037 "Sales Invoice"
             { }
             column(PackingComm; "Packing Comm.")
             { }
+
             dataitem("Sales Line"; "Sales Line")
             {
                 DataItemLink = "Document No." = FIELD("No.");
@@ -133,6 +134,10 @@ report 50037 "Sales Invoice"
                 { }
                 column(ShippingMarksDetails; ShippingMarksDetails)
                 { }
+                column(freight; freight)
+                { }
+                column(ExchangeRate; ExchangeRate)
+                { }
 
                 trigger OnAfterGetRecord();
                 begin
@@ -142,6 +147,9 @@ report 50037 "Sales Invoice"
 
                     IF Type = Type::Item THEN
                         SunTotal += Amount;
+
+                    if Type = Type::"Charge (Item)" then
+                        freight += Amount;
                 end;
 
                 trigger OnPreDataItem();
@@ -199,7 +207,9 @@ report 50037 "Sales Invoice"
                 recBank.RESET;
                 recBank.SETRANGE(recBank."No.", "Bank Code");
                 recBank.FINDFIRST;
-
+                ExchangeRate := 0;
+                if "Currency Code" <> '' then
+                    ExchangeRate := 1 / "Currency Factor";
                 //IF NOT recBank.GET("Payment Terms Code") THEN CLEAR(recPaymentterm);
             end;
 
@@ -297,5 +307,7 @@ report 50037 "Sales Invoice"
         ShippingMarksDetails: Text[1000];
         CustomerCountryName: Text[250];
         Country_region: Record "Country/Region";
+        freight: Decimal;
+        ExchangeRate: Decimal;
 }
 
