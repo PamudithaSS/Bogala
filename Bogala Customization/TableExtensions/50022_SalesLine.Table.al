@@ -22,6 +22,14 @@ tableextension 50022 SalesLine extends "Sales Line"
         {
             DataClassification = ToBeClassified;
         }
+        field(50005; "count"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(50006; "pakage name"; Text[30])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
 }

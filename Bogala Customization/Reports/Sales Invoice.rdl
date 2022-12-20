@@ -11,232 +11,6 @@
       <rd:DataSourceID>ee05eb25-75e0-4b88-b932-fafa778cd306</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="Name__CompanyInformation">
-          <DataField>Name__CompanyInformation</DataField>
-        </Field>
-        <Field Name="Address__CompanyInformation">
-          <DataField>Address__CompanyInformation</DataField>
-        </Field>
-        <Field Name="Address2__CompanyInformation">
-          <DataField>Address2__CompanyInformation</DataField>
-        </Field>
-        <Field Name="City__CompanyInformation">
-          <DataField>City__CompanyInformation</DataField>
-        </Field>
-        <Field Name="County__CompanyInformation">
-          <DataField>County__CompanyInformation</DataField>
-        </Field>
-        <Field Name="SVATRegis__CompanyInformation">
-          <DataField>SVATRegis__CompanyInformation</DataField>
-        </Field>
-        <Field Name="PhoneNo__CompanyInformation">
-          <DataField>PhoneNo__CompanyInformation</DataField>
-        </Field>
-        <Field Name="FaxNo__CompanyInformation">
-          <DataField>FaxNo__CompanyInformation</DataField>
-        </Field>
-        <Field Name="EMail__CompanyInformation">
-          <DataField>EMail__CompanyInformation</DataField>
-        </Field>
-        <Field Name="VATRegis__CompanyInformation">
-          <DataField>VATRegis__CompanyInformation</DataField>
-        </Field>
-        <Field Name="SWIFTCode__CompanyInformation">
-          <DataField>SWIFTCode__CompanyInformation</DataField>
-        </Field>
-        <Field Name="BankAccountNo__CompanyInformation">
-          <DataField>BankAccountNo__CompanyInformation</DataField>
-        </Field>
-        <Field Name="Picture__CompanyInformation">
-          <DataField>Picture__CompanyInformation</DataField>
-        </Field>
-        <Field Name="Name__Customer">
-          <DataField>Name__Customer</DataField>
-        </Field>
-        <Field Name="Address__Customer">
-          <DataField>Address__Customer</DataField>
-        </Field>
-        <Field Name="Address2__Customer">
-          <DataField>Address2__Customer</DataField>
-        </Field>
-        <Field Name="County__Customer">
-          <DataField>County__Customer</DataField>
-        </Field>
-        <Field Name="Customer_City">
-          <DataField>Customer_City</DataField>
-        </Field>
-        <Field Name="Customer_CountryRegion">
-          <DataField>Customer_CountryRegion</DataField>
-        </Field>
-        <Field Name="SVATRegistrationNo__Customer">
-          <DataField>SVATRegistrationNo__Customer</DataField>
-        </Field>
-        <Field Name="Name__BankAccount">
-          <DataField>Name__BankAccount</DataField>
-        </Field>
-        <Field Name="Address__BankAccount">
-          <DataField>Address__BankAccount</DataField>
-        </Field>
-        <Field Name="Address2__BankAccount">
-          <DataField>Address2__BankAccount</DataField>
-        </Field>
-        <Field Name="City__BankAccount">
-          <DataField>City__BankAccount</DataField>
-        </Field>
-        <Field Name="BankAccountNo__BankAccount">
-          <DataField>BankAccountNo__BankAccount</DataField>
-        </Field>
-        <Field Name="OrderDate">
-          <DataField>OrderDate</DataField>
-        </Field>
-        <Field Name="No">
-          <DataField>No</DataField>
-        </Field>
-        <Field Name="CustomerOrderNumber">
-          <DataField>CustomerOrderNumber</DataField>
-        </Field>
-        <Field Name="CustomerOrderDate">
-          <DataField>CustomerOrderDate</DataField>
-        </Field>
-        <Field Name="SelltoCustomerNo">
-          <DataField>SelltoCustomerNo</DataField>
-        </Field>
-        <Field Name="ShippingMarks">
-          <DataField>ShippingMarks</DataField>
-        </Field>
-        <Field Name="PaymentTermsCode">
-          <DataField>PaymentTermsCode</DataField>
-        </Field>
-        <Field Name="Header">
-          <DataField>Header</DataField>
-        </Field>
-        <Field Name="Hide">
-          <DataField>Hide</DataField>
-        </Field>
-        <Field Name="Test">
-          <DataField>Test</DataField>
-        </Field>
-        <Field Name="TestFormat">
-          <DataField>TestFormat</DataField>
-        </Field>
-        <Field Name="LKRV">
-          <DataField>LKRV</DataField>
-        </Field>
-        <Field Name="LKRVFormat">
-          <DataField>LKRVFormat</DataField>
-        </Field>
-        <Field Name="USDV">
-          <DataField>USDV</DataField>
-        </Field>
-        <Field Name="USDVFormat">
-          <DataField>USDVFormat</DataField>
-        </Field>
-        <Field Name="Destination">
-          <DataField>Destination</DataField>
-        </Field>
-        <Field Name="DimensionValueName">
-          <DataField>DimensionValueName</DataField>
-        </Field>
-        <Field Name="LineComment_">
-          <DataField>LineComment_</DataField>
-        </Field>
-        <Field Name="CurrencyCode">
-          <DataField>CurrencyCode</DataField>
-        </Field>
-        <Field Name="Vessel">
-          <DataField>Vessel</DataField>
-        </Field>
-        <Field Name="ShipmentMethodCode">
-          <DataField>ShipmentMethodCode</DataField>
-        </Field>
-        <Field Name="recpaytermdis">
-          <DataField>recpaytermdis</DataField>
-        </Field>
-        <Field Name="recBankSWIFTCode">
-          <DataField>recBankSWIFTCode</DataField>
-        </Field>
-        <Field Name="PackingComm">
-          <DataField>PackingComm</DataField>
-        </Field>
-        <Field Name="No__SalesLine">
-          <DataField>No__SalesLine</DataField>
-        </Field>
-        <Field Name="Description__SalesLine">
-          <DataField>Description__SalesLine</DataField>
-        </Field>
-        <Field Name="HSCode__SalesLine">
-          <DataField>HSCode__SalesLine</DataField>
-        </Field>
-        <Field Name="Quantity__SalesLine">
-          <DataField>Quantity__SalesLine</DataField>
-        </Field>
-        <Field Name="Quantity__SalesLineFormat">
-          <DataField>Quantity__SalesLineFormat</DataField>
-        </Field>
-        <Field Name="UnitofMeasure__SalesLine">
-          <DataField>UnitofMeasure__SalesLine</DataField>
-        </Field>
-        <Field Name="NoofPackages__SalesLine">
-          <DataField>NoofPackages__SalesLine</DataField>
-        </Field>
-        <Field Name="UnitPrice__SalesLine">
-          <DataField>UnitPrice__SalesLine</DataField>
-        </Field>
-        <Field Name="UnitPrice__SalesLineFormat">
-          <DataField>UnitPrice__SalesLineFormat</DataField>
-        </Field>
-        <Field Name="Amount__SalesLine">
-          <DataField>Amount__SalesLine</DataField>
-        </Field>
-        <Field Name="Amount__SalesLineFormat">
-          <DataField>Amount__SalesLineFormat</DataField>
-        </Field>
-        <Field Name="Type__SalesLine">
-          <DataField>Type__SalesLine</DataField>
-        </Field>
-        <Field Name="GWeight">
-          <DataField>GWeight</DataField>
-        </Field>
-        <Field Name="GWeightFormat">
-          <DataField>GWeightFormat</DataField>
-        </Field>
-        <Field Name="NWeight">
-          <DataField>NWeight</DataField>
-        </Field>
-        <Field Name="NWeightFormat">
-          <DataField>NWeightFormat</DataField>
-        </Field>
-        <Field Name="SunTotal">
-          <DataField>SunTotal</DataField>
-        </Field>
-        <Field Name="SunTotalFormat">
-          <DataField>SunTotalFormat</DataField>
-        </Field>
-        <Field Name="ShippingMarksDetails">
-          <DataField>ShippingMarksDetails</DataField>
-        </Field>
-        <Field Name="freight">
-          <DataField>freight</DataField>
-        </Field>
-        <Field Name="freightFormat">
-          <DataField>freightFormat</DataField>
-        </Field>
-        <Field Name="ExchangeRate">
-          <DataField>ExchangeRate</DataField>
-        </Field>
-        <Field Name="ExchangeRateFormat">
-          <DataField>ExchangeRateFormat</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -2392,7 +2166,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Net Weight (Kg)</Value>
+                                  <Value>Net Weight (Ton)</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -2463,7 +2237,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Total no of Packages</Value>
+                                  <Value>No of Packages</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -2491,14 +2265,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox70">
+                        <Textbox Name="count">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!NoofPackages__SalesLine.Value)</Value>
+                                  <Value>=Sum(Fields!count.Value)</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -2509,7 +2283,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox70</rd:DefaultName>
+                          <rd:DefaultName>count</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2642,7 +2416,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Total no of Packages</Value>
+                                  <Value />
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -2677,7 +2451,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=sum(Fields!NoofPackages__SalesLine.Value)</Value>
+                                  <Value />
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -2712,7 +2486,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>No of Packages</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -2747,7 +2521,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!count.Value)</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -2873,7 +2647,14 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>  CFR Total EUR </Value>
+                                  <Value>=Fields!ShipmentMethodCode.Value</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>  Total EUR </Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -4745,12 +4526,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -4790,4 +4565,236 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Name__CompanyInformation">
+          <DataField>Name__CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address__CompanyInformation">
+          <DataField>Address__CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address2__CompanyInformation">
+          <DataField>Address2__CompanyInformation</DataField>
+        </Field>
+        <Field Name="City__CompanyInformation">
+          <DataField>City__CompanyInformation</DataField>
+        </Field>
+        <Field Name="County__CompanyInformation">
+          <DataField>County__CompanyInformation</DataField>
+        </Field>
+        <Field Name="SVATRegis__CompanyInformation">
+          <DataField>SVATRegis__CompanyInformation</DataField>
+        </Field>
+        <Field Name="PhoneNo__CompanyInformation">
+          <DataField>PhoneNo__CompanyInformation</DataField>
+        </Field>
+        <Field Name="FaxNo__CompanyInformation">
+          <DataField>FaxNo__CompanyInformation</DataField>
+        </Field>
+        <Field Name="EMail__CompanyInformation">
+          <DataField>EMail__CompanyInformation</DataField>
+        </Field>
+        <Field Name="VATRegis__CompanyInformation">
+          <DataField>VATRegis__CompanyInformation</DataField>
+        </Field>
+        <Field Name="SWIFTCode__CompanyInformation">
+          <DataField>SWIFTCode__CompanyInformation</DataField>
+        </Field>
+        <Field Name="BankAccountNo__CompanyInformation">
+          <DataField>BankAccountNo__CompanyInformation</DataField>
+        </Field>
+        <Field Name="Picture__CompanyInformation">
+          <DataField>Picture__CompanyInformation</DataField>
+        </Field>
+        <Field Name="Name__Customer">
+          <DataField>Name__Customer</DataField>
+        </Field>
+        <Field Name="Address__Customer">
+          <DataField>Address__Customer</DataField>
+        </Field>
+        <Field Name="Address2__Customer">
+          <DataField>Address2__Customer</DataField>
+        </Field>
+        <Field Name="County__Customer">
+          <DataField>County__Customer</DataField>
+        </Field>
+        <Field Name="Customer_City">
+          <DataField>Customer_City</DataField>
+        </Field>
+        <Field Name="Customer_CountryRegion">
+          <DataField>Customer_CountryRegion</DataField>
+        </Field>
+        <Field Name="SVATRegistrationNo__Customer">
+          <DataField>SVATRegistrationNo__Customer</DataField>
+        </Field>
+        <Field Name="Name__BankAccount">
+          <DataField>Name__BankAccount</DataField>
+        </Field>
+        <Field Name="Address__BankAccount">
+          <DataField>Address__BankAccount</DataField>
+        </Field>
+        <Field Name="Address2__BankAccount">
+          <DataField>Address2__BankAccount</DataField>
+        </Field>
+        <Field Name="City__BankAccount">
+          <DataField>City__BankAccount</DataField>
+        </Field>
+        <Field Name="BankAccountNo__BankAccount">
+          <DataField>BankAccountNo__BankAccount</DataField>
+        </Field>
+        <Field Name="OrderDate">
+          <DataField>OrderDate</DataField>
+        </Field>
+        <Field Name="No">
+          <DataField>No</DataField>
+        </Field>
+        <Field Name="CustomerOrderNumber">
+          <DataField>CustomerOrderNumber</DataField>
+        </Field>
+        <Field Name="CustomerOrderDate">
+          <DataField>CustomerOrderDate</DataField>
+        </Field>
+        <Field Name="SelltoCustomerNo">
+          <DataField>SelltoCustomerNo</DataField>
+        </Field>
+        <Field Name="ShippingMarks">
+          <DataField>ShippingMarks</DataField>
+        </Field>
+        <Field Name="PaymentTermsCode">
+          <DataField>PaymentTermsCode</DataField>
+        </Field>
+        <Field Name="Header">
+          <DataField>Header</DataField>
+        </Field>
+        <Field Name="Hide">
+          <DataField>Hide</DataField>
+        </Field>
+        <Field Name="Test">
+          <DataField>Test</DataField>
+        </Field>
+        <Field Name="TestFormat">
+          <DataField>TestFormat</DataField>
+        </Field>
+        <Field Name="LKRV">
+          <DataField>LKRV</DataField>
+        </Field>
+        <Field Name="LKRVFormat">
+          <DataField>LKRVFormat</DataField>
+        </Field>
+        <Field Name="USDV">
+          <DataField>USDV</DataField>
+        </Field>
+        <Field Name="USDVFormat">
+          <DataField>USDVFormat</DataField>
+        </Field>
+        <Field Name="Destination">
+          <DataField>Destination</DataField>
+        </Field>
+        <Field Name="DimensionValueName">
+          <DataField>DimensionValueName</DataField>
+        </Field>
+        <Field Name="LineComment_">
+          <DataField>LineComment_</DataField>
+        </Field>
+        <Field Name="CurrencyCode">
+          <DataField>CurrencyCode</DataField>
+        </Field>
+        <Field Name="Vessel">
+          <DataField>Vessel</DataField>
+        </Field>
+        <Field Name="ShipmentMethodCode">
+          <DataField>ShipmentMethodCode</DataField>
+        </Field>
+        <Field Name="recpaytermdis">
+          <DataField>recpaytermdis</DataField>
+        </Field>
+        <Field Name="recBankSWIFTCode">
+          <DataField>recBankSWIFTCode</DataField>
+        </Field>
+        <Field Name="PackingComm">
+          <DataField>PackingComm</DataField>
+        </Field>
+        <Field Name="No__SalesLine">
+          <DataField>No__SalesLine</DataField>
+        </Field>
+        <Field Name="Description__SalesLine">
+          <DataField>Description__SalesLine</DataField>
+        </Field>
+        <Field Name="HSCode__SalesLine">
+          <DataField>HSCode__SalesLine</DataField>
+        </Field>
+        <Field Name="Quantity__SalesLine">
+          <DataField>Quantity__SalesLine</DataField>
+        </Field>
+        <Field Name="Quantity__SalesLineFormat">
+          <DataField>Quantity__SalesLineFormat</DataField>
+        </Field>
+        <Field Name="UnitofMeasure__SalesLine">
+          <DataField>UnitofMeasure__SalesLine</DataField>
+        </Field>
+        <Field Name="NoofPackages__SalesLine">
+          <DataField>NoofPackages__SalesLine</DataField>
+        </Field>
+        <Field Name="UnitPrice__SalesLine">
+          <DataField>UnitPrice__SalesLine</DataField>
+        </Field>
+        <Field Name="UnitPrice__SalesLineFormat">
+          <DataField>UnitPrice__SalesLineFormat</DataField>
+        </Field>
+        <Field Name="Amount__SalesLine">
+          <DataField>Amount__SalesLine</DataField>
+        </Field>
+        <Field Name="Amount__SalesLineFormat">
+          <DataField>Amount__SalesLineFormat</DataField>
+        </Field>
+        <Field Name="Type__SalesLine">
+          <DataField>Type__SalesLine</DataField>
+        </Field>
+        <Field Name="GWeight">
+          <DataField>GWeight</DataField>
+        </Field>
+        <Field Name="GWeightFormat">
+          <DataField>GWeightFormat</DataField>
+        </Field>
+        <Field Name="NWeight">
+          <DataField>NWeight</DataField>
+        </Field>
+        <Field Name="NWeightFormat">
+          <DataField>NWeightFormat</DataField>
+        </Field>
+        <Field Name="SunTotal">
+          <DataField>SunTotal</DataField>
+        </Field>
+        <Field Name="SunTotalFormat">
+          <DataField>SunTotalFormat</DataField>
+        </Field>
+        <Field Name="ShippingMarksDetails">
+          <DataField>ShippingMarksDetails</DataField>
+        </Field>
+        <Field Name="freight">
+          <DataField>freight</DataField>
+        </Field>
+        <Field Name="freightFormat">
+          <DataField>freightFormat</DataField>
+        </Field>
+        <Field Name="ExchangeRate">
+          <DataField>ExchangeRate</DataField>
+        </Field>
+        <Field Name="ExchangeRateFormat">
+          <DataField>ExchangeRateFormat</DataField>
+        </Field>
+        <Field Name="count">
+          <DataField>count</DataField>
+        </Field>
+        <Field Name="countFormat">
+          <DataField>countFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
