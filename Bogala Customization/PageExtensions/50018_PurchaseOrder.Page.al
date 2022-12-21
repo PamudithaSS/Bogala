@@ -178,6 +178,17 @@ pageextension 50018 PurchaseOrder extends "Purchase Order"
         {
             ApplicationArea = All;
         }
+        //Support - Amandi 15/12/2022 
+        //PS(+)
+        modify("Document Date")
+        {
+            Editable = false;
+        }
+        modify("Order Date")
+        {
+            Editable = false;
+        }
+        //PS(-)
     }
 
     actions
