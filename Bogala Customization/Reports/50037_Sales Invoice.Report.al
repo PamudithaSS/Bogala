@@ -176,7 +176,7 @@ report 50037 "Sales Invoice"
                 //DP-2021-08-06-CAS-05293-G1D0 End
 
                 LKRV := CurrencyExchangeRate.ExchangeAmtFCYToLCY("Order Date", "Currency Code", Amount, "Currency Factor");
-                USDV := CurrencyExchangeRate.ExchangeAmtLCYToFCY("Order Date", 'USD', LKRV, CurrencyExchangeRate.ExchangeRate("Order Date", 'USD'));
+                USDV := CurrencyExchangeRate.ExchangeAmtLCYToFCY("Order Date", 'USD', Amount, CurrencyExchangeRate.ExchangeRate("Order Date", 'USD'));
 
                 IF BankAccount.GET("Bank Code") THEN;
 
