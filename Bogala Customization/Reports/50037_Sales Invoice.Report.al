@@ -138,6 +138,8 @@ report 50037 "Sales Invoice"
                 { }
                 column(ExchangeRate; ExchangeRate)
                 { }
+                column(count; count)
+                { }
 
                 trigger OnAfterGetRecord();
                 begin

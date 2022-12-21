@@ -14,6 +14,30 @@ pageextension 50015 SalesOrderSubform extends "Sales Order Subform"
             field("No.of Packages"; Rec."No.of Packages")
             {
                 ApplicationArea = All;
+                Visible = false;
+
+            }
+            field("count"; Rec."count")
+            {
+                ApplicationArea = All;
+                Caption = 'Package QTY';
+                trigger OnValidate()
+                var
+                    myInt: Integer;
+                begin
+                    "No.of Packages" := Format(count) + "pakage name";
+                end;
+            }
+            field("pakage name"; Rec."pakage name")
+            {
+                ApplicationArea = All;
+                Caption = 'Package Type';
+                trigger OnValidate()
+                var
+                    myInt: Integer;
+                begin
+                    "No.of Packages" := Format(count) + "pakage name";
+                end;
             }
             field("No Of Units"; Rec."No Of Units")
             {
@@ -54,5 +78,6 @@ pageextension 50015 SalesOrderSubform extends "Sales Order Subform"
         {
             ApplicationArea = All;
         }
+
     }
 }
